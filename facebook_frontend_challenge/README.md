@@ -1,3 +1,7 @@
+##Process
+1. Finished Part 1, it is under layoutDay/src folder
+2. TODO: Part 2
+
 UI Engineering Puzzle
 Part I: Write a function (either PHP or JS) to lay out a series of
 events on the calendar for a single day.
