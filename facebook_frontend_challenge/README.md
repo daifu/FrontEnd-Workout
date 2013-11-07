@@ -1,5 +1,5 @@
 ##Process
-1. Finished Part 1, it is under layoutDay/src folder
+1. Finished Part 1, it is under layout_events/src folder
 2. TODO: Part 2
 
 UI Engineering Puzzle
