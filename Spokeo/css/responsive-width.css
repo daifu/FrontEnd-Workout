@@ -1,0 +1,79 @@
+@media screen and (min-width: 1300px) {
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .small-column.main {
+    display: none !important;
+  }
+  .large-column.main {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .header {
+    left: 249px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /********  Common *********/
+  .footer,.search-tabs, .select-menu-wrapper, .column-header {
+    display: none;
+  }
+  .divider {
+    display: block;
+    top: 50px;
+    left: 0;
+    right: 0;
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #a1aab3;
+    margin: 1em 0; padding: 0;
+  }
+  /********  Header *********/
+  .header {
+    left: 115px;
+    top: 5px;
+  }
+  .logo {
+    background-position: -0px -30px;
+    width: 89px;
+    height: 17px;
+    top: 28px;
+    left: 0;
+  }
+  .select-menu-wrapper-mini {
+    display: block;
+    top: 4px;
+    right: 5px;
+  }
+  .dropdown-mini {
+    font-size: 25px;
+    z-index: 9999;
+  }
+  .select-menu-option-mobile {
+    background-color: #fff;
+    width: 100%;
+  }
+  .select-menu-option-mobile li {
+    border-bottom: 1px solid #e1e3e5;
+    padding: 8px 10px;
+  }
+  /********  Search *********/
+  .search-bar {
+    margin-right: 90px;
+  }
+  .search-form-wrapper {
+    padding: 5px 15px;
+  }
+
+  /********  Column *********/
+  .column-content {
+    top: -29px;
+    border: none;
+    padding: 10px 0;
+  }
+}
