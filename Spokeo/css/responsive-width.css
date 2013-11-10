@@ -1,9 +1,4 @@
-@media screen and (min-width: 1300px) {
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-}
-
+/* Screen less than 1000px */
 @media screen and (max-width: 1000px) {
   .small-column.main {
     display: none !important;
@@ -13,12 +8,26 @@
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .header {
-    left: 249px;
+/* Screen greater than 800px */
+@media screen and (min-width: 800px) {
+  .select-menu-option-mobile {
+    /* make sure the menu is gone when resize the window*/
+    display: none !important;
+  }
+  .main-wrapper {
+    top: 0 !important;
   }
 }
 
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .header {
+    left: 215px;
+  }
+  .logo {
+    left: 0;
+  }
+}
+/* Screen less than 800px */
 @media screen and (max-width: 800px) {
   /********  Common *********/
   .footer,.search-tabs, .select-menu-wrapper, .column-header {
@@ -26,7 +35,7 @@
   }
   .divider {
     display: block;
-    top: 50px;
+    top: 35px;
     left: 0;
     right: 0;
     display: block; height: 1px;
@@ -36,13 +45,13 @@
   /********  Header *********/
   .header {
     left: 115px;
-    top: 5px;
+    top: 0;
   }
   .logo {
     background-position: -0px -30px;
     width: 89px;
     height: 17px;
-    top: 28px;
+    top: 17px;
     left: 0;
   }
   .select-menu-wrapper-mini {
@@ -60,19 +69,25 @@
   }
   .select-menu-option-mobile li {
     border-bottom: 1px solid #e1e3e5;
-    padding: 8px 10px;
+    padding: 12px 10px;
   }
   /********  Search *********/
   .search-bar {
-    margin-right: 90px;
+    margin-right: 80px;
+  }
+  .search-wrapper {
+    top: 11px;
   }
   .search-form-wrapper {
-    padding: 5px 15px;
+    padding: 4px 15px;
+  }
+  #search {
+    font-size: 12px;
   }
 
   /********  Column *********/
   .column-content {
-    top: -29px;
+    top: -15px;
     border: none;
     padding: 10px 0;
   }

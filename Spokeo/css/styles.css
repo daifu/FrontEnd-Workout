@@ -59,6 +59,7 @@ Desktop Layout
  * -----------------------------------------------------------*/
 body {
   font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 100;
 }
 html,body {
   margin: 0;
@@ -241,12 +242,12 @@ input:focus {
 }
 .small-column.main {
   width: 340px;
-  top: 95px;
+  top: 83px;
   left: 0;
   bottom: 22px;
 }
 .large-column.main {
-  top: 95px;
+  top: 83px;
   left: 350px;
   bottom: 22px;
   right: 0;
@@ -284,35 +285,35 @@ input:focus {
 .no-list-style.nav-menu {
   margin-left: 22px;
 }
-
 .nav-menu li {
   margin-right: 15px;
 }
-
+.nav-menu li a.active {
+  color: #40464d;
+}
 /* select-menu-option */
 .select-menu-wrapper {
   position: relative;
 }
-
 .select-menu-option {
   border: 1px solid #a1aab3;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #fff;
   padding: 5px 10px;
-  top: 40px;
-  min-width: 120px;
+  top: 30px;
+  min-width: 145px;
   right: 0;
 }
 
 .select-menu-option li {
-  margin: 5px;
+  margin: 13px 5px 13px 5px;
 }
 
 /*----------------------------------------------------------
  * $Searcher
  * -----------------------------------------------------------*/
 .search-bar {
-  margin-right: 190px;
+  margin-right: 210px;
 }
 .search-content {
   width: 100%;
@@ -339,13 +340,14 @@ input:focus {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
+  letter-spacing: 0.8px;
 }
 .search-form-wrapper {
   background: white;
   width: 100%;
   height: 100%;
   z-index: 2;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border: 1px solid #cccccc;
   text-indent: 0;
   font-weight: 600;
@@ -376,12 +378,12 @@ input:focus {
 .select-menu-wrapper {
   position: absolute;
   right: 0px;
-  top: 36px;
+  top: 32px;
   z-index: 5;
 }
 
 .select-menu-wrapper .account {
-  padding: 13px 5px 13px 20px;
+  padding: 8px 15px 8px 21px;
   border: 1px solid #ccc;
   background: white;
 }
@@ -389,7 +391,7 @@ input:focus {
 .select-menu-wrapper .dropdown {
   background: white;
   margin-left: -3px;
-  padding: 14px 10px 14px 5px;
+  padding: 9px 13px 9px 12px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -403,19 +405,23 @@ input:focus {
  * -----------------------------------------------------------*/
 .column-header {
   width: 100%;
-  padding: 10px 0px 10px 20px;
+  padding: 10px 0px 14px 20px;
   color: white;
+  font-weight: bold;
 }
 
 .column-content {
-  padding: 10px 20px;
+  padding: 20px;
   position: absolute;
-  top: 36px;
+  top: 38px;
   left: 0;
   right: 0;
   bottom: 0;
   overflow: auto;
   overflow-x: hidden;
+}
+.header-text {
+  margin-left: 4px;
 }
 
 
@@ -423,14 +429,14 @@ input:focus {
  * $Footer
  * -----------------------------------------------------------*/
 .footer .list-wrapper {
-  width: 500px;
+  width: 560px;
   height: 22px;
   line-height: 22px;
   float:right;
 }
 
 .footer li a{
-  margin-right: 9px;
+  margin-right: 16px;
 }
 .footer {
   width: 100%;
@@ -440,4 +446,7 @@ input:focus {
   left: 0;
   bottom: 0;
   background: none;
+}
+.copyright {
+  margin-left:6px;
 }

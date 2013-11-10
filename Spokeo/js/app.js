@@ -1,6 +1,6 @@
 $(function() {
 
-  $.speoko = {};
+  $.spokeo = {};
 
   // global extended jquey function
   //
@@ -10,10 +10,13 @@ $(function() {
     },
     isHidden: function() {
       return !this.is(':visible');
+    },
+    unActiveAll: function() {
+      this.find('.active').removeClass('active');
     }
   })
 
-  $.speoko.menu = function() {
+  $.spokeo.menu = function() {
     var _toggleDropdown = function(cls) {
       $(cls).on('click', function() {
         var that = this; // save the object
@@ -31,20 +34,20 @@ $(function() {
     var _toggleDropdownMobile = function(cls) {
       $(cls).on('click', function(){
         if ($('.js-dropdown-menu-mobile').isShown()) {
-          // push down the whole menu
+          // push up the whole menu
           $('.main-wrapper').animate({
-            top: '0px'
+            top: '0'
           });
           $('.divider').animate({
-            top: '50px'
+            top: '40px'
           });
         } else {
           // push down the whole menu
           $('.main-wrapper').animate({
-            top: '156px' // 156: height of top menu
+            top: '164px' // 164: height of top menu
           });
           $('.divider').animate({
-            top: '206px' //156 + 50
+            top: '204px' //164 + 40
           });
         }
         $('.js-dropdown-menu-mobile').toggle(400);
@@ -64,11 +67,21 @@ $(function() {
       });
     };
 
+    // Listen the search tabs, if it click the search tab, it should
+    // highlight that link
+    var _listenClickSearchTabs = function(){
+      $('.nav-menu li a').on('click', function() {
+        $(this).parents('ul').unActiveAll();
+        $(this).addClass('active');
+      });
+    };
+
     return {
       init: function() {
         _toggleDropdown('.js-dropdown');
         _toggleDropdownMobile('.js-dropdown-mobile');
         _hightlightSearchOnFocus();
+        _listenClickSearchTabs();
       }
     }
   }();
